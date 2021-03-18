@@ -3,6 +3,9 @@
 
 <h1>Lab Setup</h1>
 <br>
+
+<a href="https://tryhackme.com">TRYHACKME</a>
+<a href="https://hackthebox.eu">HACKTHEBOX</a>
 <h2>Metasploitable</h2>
 
 <p>You Can Download at <a href="https://www.vulnhub.com/?q=metasploitable">Here</a></p>
