@@ -10,3 +10,6 @@ You Can Download Installation Image at <a href="https://archlinux.org/download/"
 <br>
 To Boot Into Live Medium,Select Boot Arch Linux (x86_64).<br>
 <img src="https://user-images.githubusercontent.com/66734606/111672488-66e15b80-8848-11eb-9d46-0b2af5a7a58f.jpg" width="600px" height="300px">
+<br>
+After Checking Process,You Will Get Shell With Root Permission(auto login).To Check UEFI Mode,Run ls command like this.<br>
+<code>ls /sys/firmware/efi/efivars</code><br>
