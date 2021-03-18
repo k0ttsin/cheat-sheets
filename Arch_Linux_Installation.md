@@ -8,5 +8,5 @@
 <br><br>
 You Can Download Installation Image at <a href="https://archlinux.org/download/">Here</a>(<a href="https://archlinux.org/download/">Arch Linux</a>).After Download,Make Bootable USB With <a href="https://www.balena.io/etcher/">BalenaEtcher</a> or use <code>dd bs=4M if=/path/to/archlinux.iso of=/dev/sdx status=progress && sync</code>
 <br>
-Select Boot Arch Linux (x86_64).<br>
+To Boot Into Live Medium,Select Boot Arch Linux (x86_64).<br>
 <img src="https://user-images.githubusercontent.com/66734606/111672488-66e15b80-8848-11eb-9d46-0b2af5a7a58f.jpg" width="600px" height="300px">
