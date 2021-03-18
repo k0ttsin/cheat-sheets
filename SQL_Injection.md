@@ -15,3 +15,5 @@
 <h2>Comments</h2>
 <p><b>Oracle:</b> --comment</p>
 <p><b>Microsoft:</b> --comment or /*comment*/ </p>
+<p><b>PostgreSQL:</b> --comment or /*comment*/ </p>
+<p><b>MySQL:</b> #comment (or) --comment (or) /*comment*/</p>
