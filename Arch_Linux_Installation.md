@@ -111,3 +111,15 @@ Make /boot/efi Directory :
 <code>mkdir /boot/efi</code><br>
 Mount EFI Partition :
 <code>mount /dev/sda1 /boot/efi</code><br>
+Install GRUB :
+<code>grub-install --target=x86_64-efi --bootloader-id=GRUB --efi-directory=/boot/efi</code><br>
+Generate GRUB Config File :
+<code>grub-mkconfig -o /boot/grub/grub.cfg</code>
+<br><br>
+<h5>For Legacy System</h5>
+Install GRUB package:
+<code>pacman -S grub</code><br>
+Install GRUB Bootloader :
+<code>grub-install /dev/sda</code><br>
+Make Config File :
+<code>grub-mkconfig -o /boot/grub/grub.cfg</code><br>
