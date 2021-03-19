@@ -89,6 +89,6 @@ Create <i>hostname</i> File In /etc Directory For PC Name By Command : <code>ech
 You Can Use Different Name For Your PC.<br>
 Edit hosts File By Command: <code>/etc/hosts</code><br>.
 And Write Like The Following :<br>
-<code>127.0.0.1	localhost
-::1		localhost
-127.0.1.1	myarch</code>
+<code>127.0.0.1	localhost<br>
+::1		localhost<br>
+127.0.1.1	myarch</code><br>
