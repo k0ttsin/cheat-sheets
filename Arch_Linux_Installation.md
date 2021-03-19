@@ -79,3 +79,7 @@ For Us (Myanmar Timezone),Enter : <code>timedatectl set-timezone Asia/Yangon</co
 <b>Set Locale</b><br>
 This is For Language,Numbering,Date and Currency Formats On System.<br>
 Use : <code>nano /etc/locale.gen</code> or <code>vim /etc/locale.gen</code> To Edit locale.gen File.And Uncomment en_US.UTF-8 UTF-8 (For English With US).<br>
+Generate <b>locale</b> config file in <b>/etc</b> Directory By Running The Following Comands One By One:
+<code>locale-gen</code><br>
+<code>echo LANG=en_GB.UTF-8 > /etc/locale.conf</code><br>
+<code>export LANG=en_GB.UTF-8</code><br>
