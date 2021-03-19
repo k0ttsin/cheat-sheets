@@ -67,3 +67,6 @@ This will take some time.Take a coffee ;).If it is interrupted,Run this command 
 <b>Configure Linux System</b><br>
 Generate a fstab file to define how disk partitions or block devices are mounted into the filesystem.<br>
 Command :<code>genfstab -U /mnt >> /mnt/etc/fstab</code><br>
+Use <i>arch-chroot</i> And Enter the Mounted Disk As Root.
+Command :<code>arch-chroot /mnt</code><br>
+We Are Using Live Medium.After this command,We Get Root Shell To Configure The Installed System For Working Well On Boot Disk.<br>
