@@ -62,7 +62,7 @@ Mount Root System Partition with:
 To Install Necessary Packages,Use <a href="https://git.archlinux.org/arch-install-scripts.git/tree/pacstrap.in">pacstrap</a> Script.<br>
 Command:
 <code>pacstrap /mnt base base-devel linux linux-firmware vim nano</code><br>
-This will take some time.Take a coffee ;).If it is interrupted,Run this command try again.<br>
+This will take some time.Take a coffee ;).If it is interrupted,Run this command again.<br>
 <br>
 <b>Configure Linux System</b><br>
 Generate a fstab file to define how disk partitions or block devices are mounted into the filesystem.<br>
@@ -70,3 +70,8 @@ Command :<code>genfstab -U /mnt >> /mnt/etc/fstab</code><br>
 Use <i>arch-chroot</i> And Enter the Mounted Disk As Root.
 Command :<code>arch-chroot /mnt</code><br>
 We Are Using Live Medium.After this command,We Get Root Shell To Configure The Installed System For Working Well On Boot Disk.<br>
+<br><br>
+<b>Setting Timezone</b><br>
+To list all timezones,Use : <code>timedatectl list-timezones</code>
+<br>
+For Us (Myanmar Timezone),Enter : <code>timedatectl set-timezone Asia/Yangon</code><br>
