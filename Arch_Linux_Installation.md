@@ -75,3 +75,7 @@ We Are Using Live Medium.After this command,We Get Root Shell To Configure The I
 To list all timezones,Use : <code>timedatectl list-timezones</code>
 <br>
 For Us (Myanmar Timezone),Enter : <code>timedatectl set-timezone Asia/Yangon</code><br>
+<br><br>
+<b>Set Locale</b><br>
+This is For Language,Numbering,Date and Currency Formats On System.<br>
+Use : <code>nano /etc/locale.gen</code> or <code>vim /etc/locale.gen</code> To Edit locale.gen File.And Uncomment en_US.UTF-8 UTF-8 (For English With US).<br>
