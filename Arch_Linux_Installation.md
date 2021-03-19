@@ -123,3 +123,15 @@ Install GRUB Bootloader :
 <code>grub-install /dev/sda</code><br>
 Make Config File :
 <code>grub-mkconfig -o /boot/grub/grub.cfg</code><br>
+<br><br>
+<b>Install Desktop Environment (GUI)</b>
+You Can Install DE You Like.(xfce,mate,kde,gnome,cinnamon,etc)<br>
+Also You Can Change DE Later.<br><br>
+The Following Command Install GNOME Desktop Environment.<br>
+<code>pacman -Sy xorg gnome</code><br>
+Enable Display Manager (gdm) and NetworkManager :
+<code>systemctl start gdm.service</code><br>
+<code>systemctl enable gdm.service</code><br>
+<code>systemctl enable NetworkManager.service</code><br>
+Exit The Current Shell From Chroot : <code>exit</code><br>
+Shutdown System : <code>shutdown</code><br>
