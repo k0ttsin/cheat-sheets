@@ -65,3 +65,5 @@ Command:
 This will take some time.Take a coffee ;).If it is interrupted,Run this command try again.<br>
 <br>
 <b>Configure Linux System</b><br>
+Generate a fstab file to define how disk partitions or block devices are mounted into the filesystem.<br>
+Command :<code>genfstab -U /mnt >> /mnt/etc/fstab</code><br>
