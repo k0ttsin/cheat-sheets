@@ -87,8 +87,27 @@ Generate <b>locale</b> config file in <b>/etc</b> Directory By Running The Follo
 <b>Network Configuration</b><br>
 Create <i>hostname</i> File In /etc Directory For PC Name By Command : <code>echo localarch > /etc/hostname</code><br>
 You Can Use Different Name For Your PC.<br>
-Edit hosts File By Command: <code>/etc/hosts</code><br>.
+Edit hosts File By Command: <code>/etc/hosts</code><br>
 And Write Like The Following :<br>a
 <b>127.0.0.1	localhost<br>
 ::1		localhost<br>
 127.0.1.1	myarch</b><br>
+<br><br>
+<b>Set Root Password And Create New User</b><br>
+Set Root Password By Command : <code>passwd</code><br> And Enter Your Password Twice.<br>
+<br>
+Create New User<br>
+Enter The Commands One By One:
+<code>useradd -m username</code><br>
+<code>usermod -aG wheel username</code><br>
+<code>nano /etc/sudoers</code><br>
+Find and Uncomment this line : <b>%wheel ALL=(ALL) ALL</b><br><br>
+<br>
+<b>Install GRUB Bootloader</b>
+<h5>For UEFI System</h5>
+Install grub and required packages:
+<code>pacman -Sy grub efibootmgr</code><br>
+Make /boot/efi Directory :
+<code>mkdir /boot/efi</code><br>
+Mount EFI Partition :
+<code>mount /dev/sda1 /boot/efi</code><br>
