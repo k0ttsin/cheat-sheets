@@ -56,7 +56,12 @@ Use <code>mkfs</code>command:<br>
 <br><br>
 <b>Install Arch Linux</b><br>
 Sync <i>pacman</i> Repository with:
-<code>pacman -Syy</code>
+<code>pacman -Syy</code><br>
 Mount Root System Partition with:
 <code>mount /dev/sda2 /mnt</code>(It is Root Partition!!)<br>
-To Install Necessary Packages,Use <a href="https://git.archlinux.org/arch-install-scripts.git/tree/pacstrap.in">pacstrap</a>Script
+To Install Necessary Packages,Use <a href="https://git.archlinux.org/arch-install-scripts.git/tree/pacstrap.in">pacstrap</a> Script.<br>
+Command:
+<code>pacstrap /mnt base base-devel linux linux-firmware vim nano</code><br>
+This will take some time.Take a coffee ;).If it is interrupted,Run this command try again.<br>
+<br>
+<b>Configure Linux System</b><br>
