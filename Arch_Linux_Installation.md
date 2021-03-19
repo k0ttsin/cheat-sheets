@@ -33,7 +33,7 @@ To Create New Partition, Enter <i>n</i>.Select Partition Number.Hit Enter First 
 <br><br>
 <img src="https://user-images.githubusercontent.com/66734606/111743780-9465ed80-88b8-11eb-9510-70c7cfe14f68.png" width="500px" height="110px">
 <br><br>
-To Change Parition Type, Enter <i>t</i>.And Enter L to list all parition types.Enter Number of EFI Parition Type<br>
+To Change Parition Type, Enter <i>t</i> .And Enter L to list all parition types.Enter Number of EFI Parition Type<br>
 <img src="https://user-images.githubusercontent.com/66734606/111743824-a34ca000-88b8-11eb-8125-43ffeb3a851f.jpg">
 <br><br>
 <b>Create Root Partition <u>(For Both UEFI and Legacy Systems)</u></b><br>
@@ -53,3 +53,7 @@ Use <code>mkfs</code>command:<br>
 <br>
 <h5>For Legacy System</h5>
 <code>mkfs.ext4 /dev/sda1</code> (For Only One Partition {Root})<br>
+<br><br>
+<b>Install Arch Linux</b><br>
+Sync <i>pacman</i> Repository with:
+<code>pacman -Syy</code>
