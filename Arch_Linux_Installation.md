@@ -17,10 +17,10 @@ If This Command Has No Error,Your System Has Enabled UEFI Mode.Some Steps Are Di
 <br><br>
 <b>Connect To The Internet</b><br>
 I recommend Ethernet Connection.For Connecting Wifi(if wireless card is available),<br>
-<code>$ iwctl device list<br>
-$ iwctl station DEVICE scan<br>
-$ iwctl station DEVICE get-networks<br>
-$ iwctl --passphrase=PASSPHRASE station DEVICE connect SSID</code>
+<code>$ iwctl device list</code><br>
+<code>$ iwctl station DEVICE scan</code><br>
+<code>$ iwctl station DEVICE get-networks</code><br>
+<code>$ iwctl --passphrase=PASSPHRASE station DEVICE connect SSID</code><br>
 <br><br>
 <b>Partition The Disk</b><br>
 To list all disk and partitions,use <br>
