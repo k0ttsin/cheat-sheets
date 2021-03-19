@@ -1,7 +1,7 @@
 <h1>Arch Linux Installation (Need Internet Connection)</h1>
 <p>Installation Guide from Main(<a href="https://wiki.archlinux.org/index.php/installation_guide">archlinux.org</a>)</p>
 
-<img src="archlinux.png" width="700px" height="350px">
+<img src="https://user-images.githubusercontent.com/66734606/111743490-2cafa280-88b8-11eb-8582-a369ca47909c.png" width="700px" height="350px">
 
 <b><h3>!!WARNING!! Make Sure that you have backuped you files!! I recommend to try first it with Virtualbox</h3></b>
 <b><h3>Arch Linux Image Doesn't Support Secure Boot.You Have To Disble Secure Boot In BIOS Settings</h3></b>
@@ -9,7 +9,7 @@
 You Can Download Installation Image at <a href="https://archlinux.org/download/">Here</a>(<a href="https://archlinux.org/download/">Arch Linux</a>).After Download,Make Bootable USB With <a href="https://www.balena.io/etcher/">BalenaEtcher</a> or use <code>dd bs=4M if=/path/to/archlinux.iso of=/dev/sdx status=progress && sync</code>
 <br><br><br>
 To Boot Into Live Medium,Select Boot Arch Linux (x86_64).<br>
-<img src="1-2.jpg" width="600px" height="300px">
+<img src="https://user-images.githubusercontent.com/66734606/111743715-81531d80-88b8-11eb-8c42-f4cdcd67cd13.jpg" width="600px" height="300px">
 <br>
 After Checking Process,You Will Get Shell With Root Permission(auto login).To Check UEFI Mode,Run ls command like this.<br>
 <code>ls /sys/firmware/efi/efivars</code><br>
@@ -31,17 +31,17 @@ Must Create ESP Partition For UEFI System.(UEFI Only)If Not,Can Skip This Step.<
 Type <i>m</i> for help.
 To Create New Partition, Enter <i>n</i>.Select Partition Number.Hit Enter First Sector.Enter <i>+512M</i> in Last Sector.<br>
 <br><br>
-<img src="fdisk1.png" width="500px" height="110px">
+<img src="https://user-images.githubusercontent.com/66734606/111743780-9465ed80-88b8-11eb-9510-70c7cfe14f68.png" width="500px" height="110px">
 <br><br>
 To Change Parition Type, Enter <i>t</i>.And Enter L to list all parition types.Enter Number of EFI Parition Type<br>
-<img src="efi_system_partition.jpg">
+<img src="https://user-images.githubusercontent.com/66734606/111743824-a34ca000-88b8-11eb-8125-43ffeb3a851f.jpg">
 <br><br>
 <b>Create Root Partition <u>(For Both UEFI and Legacy Systems)</u></b><br>
 In the <code>fdisk</code> Command,Enter Partition Number,First Sector.
 And I Enter The Reset of HDD for Last Sector <b>+10G</b><br>
 After All Of This,Enter w To Write Changes On Disks.
 <br><br>
-<img src="root.jpg">
+<img src="https://user-images.githubusercontent.com/66734606/111743859-b0698f00-88b8-11eb-9d8e-bcdb9227475c.jpg">
 <br>
 <i><h5>Summary for Partition:</h5>For UEFI System,We Need EFI Partition and Root Partition.<br>For Legacy System,We Only Need Root Partition.</i>
 <br><br>
