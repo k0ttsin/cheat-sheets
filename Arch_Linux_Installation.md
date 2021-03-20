@@ -129,9 +129,12 @@ You Can Install DE You Like.(xfce,mate,kde,gnome,cinnamon,etc)<br>
 Also You Can Change DE Later.<br><br>
 The Following Command Install GNOME Desktop Environment.<br>
 <code>pacman -Sy xorg gnome</code><br>
-Enable Display Manager (gdm) and NetworkManager :
+Enable Display Manager (gdm) and NetworkManager :<br>
 <code>systemctl start gdm.service</code><br>
 <code>systemctl enable gdm.service</code><br>
 <code>systemctl enable NetworkManager.service</code><br>
 Exit The Current Shell From Chroot : <code>exit</code><br>
 Shutdown System : <code>shutdown</code><br>
+
+<b>Referrence : </b><a href="https://wiki.archlinux.org/index.php/Installation_guide">wiki.archlinux.org</a>
+<b>YouTube Video : </br><a href="https://youtu.be/cM2UDz8BepU">Arch Linux Installation (Open Source Home)</a>
