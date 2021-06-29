@@ -20,6 +20,31 @@
   <i>What? Where? When? Who? How?</i>
 <hr>
 <h2>Digital Forensics Life Cycle</h2>
+
+<img src="https://user-images.githubusercontent.com/66734606/123835157-be876c80-d8f7-11eb-83b9-e6daa18c8b31.png" width="1000" height="450">
+
 <ul>
-  <li>O</li>
+  <li>Identification</li>
+  <li>Preservation</li>
+  <li>Analysis</li>
+  <li>Documentation</li>
+  <li>Presentation</li>
 </ul>
+<hr>
+<h2>Digital Forensics Categories</h2>
+<p>Digital forensics can be grouped according to the source of the acquired digital evidence.</p>
+<ul>
+  <li>Linux Forensics</li>
+  <li>Windows Forensics</li>
+  <li>MAC Forensics</li>
+  <li>Mobile Forensics</li>
+  <li>Network Forensics</li>
+  <li>Database Forensics</li>
+  <li>Web Forensics</li>
+</ul>
+<hr>
+<h2>Digital Evidence</h2>
+<p>In a regular forensics investigation, the foundation is evidence.In the digital world, evidence is discovered in any digital devices, such as cameras, printers, mobile phones, ...</p>
+<p>Examples of Digital Evidence : Temporary Files, Printer logs, Pictures, Email Messages, ... </p>
+
+  
