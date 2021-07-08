@@ -88,7 +88,7 @@ Generate <b>locale</b> config file in <b>/etc</b> Directory By Running The Follo
 Create <i>hostname</i> File In /etc Directory For PC Name By Command : <code>echo localarch > /etc/hostname</code><br>
 You Can Use Different Name For Your PC.<br>
 Edit hosts File By Command: <code>/etc/hosts</code><br>
-And Write Like The Following :<br>a
+And Write Like The Following :<br>
 <b>127.0.0.1	localhost<br>
 ::1		localhost<br>
 127.0.1.1	myarch</b><br>
