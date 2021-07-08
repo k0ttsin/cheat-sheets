@@ -1,2 +1,2 @@
 # cheat-sheets
-<b>Ctd to originals</b>
+<b>Crd to originals</b>
